@@ -18,9 +18,8 @@
     "popper-2",
     "vue-3-popper-2"
   ],
-  "main": "dist/vue3-popper.cjs.js",
-  "browser": "dist/vue3-popper.es.js",
-  "module": "dist/vue3-popper.es.js",
+  "main": "./dist/vue3-popper.umd.js",
+  "module": "./dist/vue3-popper.es.js",
   "files": [
     "dist/*",
     "src/**/*.vue",

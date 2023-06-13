@@ -20,6 +20,16 @@
   ],
   "main": "./dist/vue3-popper.umd.js",
   "module": "./dist/vue3-popper.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-popper.es.js",
+      "require": "./dist/vue3-popper.umd.js"
+    },
+    "./dist/my-library-vue-ts.css": {
+      "import": "./dist/vue3-popper.css",
+      "require": "./dist/vue3-popper.css"
+    }
+  },
   "files": [
     "dist/*",
     "src/**/*.vue",

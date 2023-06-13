@@ -6,6 +6,7 @@
     "email": "valgeir@hey.com",
     "url": "https://github.com/valgeirb"
   },
+  "type": "module",
   "repository": "github:valgeirb/vue3-popper",
   "homepage": "https://valgeirb.github.io/vue3-popper",
   "license": "MIT",
@@ -25,16 +26,15 @@
       "import": "./dist/vue3-popper.es.js",
       "require": "./dist/vue3-popper.umd.js"
     },
-    "./dist/my-library-vue-ts.css": {
+    "./dist/vue3-popper.css": {
       "import": "./dist/vue3-popper.css",
       "require": "./dist/vue3-popper.css"
     }
   },
+  "types": "index.d.ts",
   "files": [
     "dist/*",
-    "src/**/*.vue",
-    "index.d.ts"
-  ],
+    "src/**/*.vue"  ],
   "sideEffects": false,
   "scripts": {
     "dev": "vue-cli-service serve dev/serve.js",

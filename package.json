@@ -18,10 +18,9 @@
     "popper-2",
     "vue-3-popper-2"
   ],
-  "main": "dist/popper.ssr.js",
-  "browser": "dist/popper.esm.js",
-  "module": "dist/popper.esm.js",
-  "unpkg": "dist/popper.min.js",
+  "main": "dist/vue3-popper.cjs.js",
+  "browser": "dist/vue3-popper.es.js",
+  "module": "dist/vue3-popper.es.js",
   "files": [
     "dist/*",
     "src/**/*.vue",
@@ -34,14 +33,12 @@
     "build:docs": "vitepress build docs",
     "serve:docs": "vitepress serve docs",
     "deploy:docs": "npm run build:docs && npx gh-pages -d docs/.vitepress/dist",
-    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
-    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
-    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
+    "build": "vite build"
   },
   "dependencies": {
     "@popperjs/core": "^2.9.2",
-    "debounce": "^1.2.1"
+    "debounce": "^1.2.1",
+    "vite": "^2.9.16"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
